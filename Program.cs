@@ -12,37 +12,17 @@
 
         int number3 = int.Parse(third);
 
+ int max = number1;
 
-        if (number1 > number2) ;
-        {
-            number1 = int.MaxValue;
+            if (number2 > max)
+            {
+                max = number2;
+            }
 
-            else
+            if (number3 > max)
             {
-                
-                number2 = int.MaxValue;
+                max = number3;
             }
-        }
-            if (number2>number3);
-            {
-            number2 = int.MaxValue;
 
-            else 
-            {
-            number3 = int.MaxValue;
-            }
-            }
-            
-            if (number3 > number1);
-            {
-            number3 = int.MaxValue;
-            
-            else 
-            {
-            number1 = int.MaxValue;
-            }
-            }
-            
-            System.Console.WriteLine ($"{int.MaxValue} наибольшее число");
-
+System.Console.WriteLine($"{max} Наибольшее число");
         
